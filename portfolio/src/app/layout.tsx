@@ -7,6 +7,13 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+export const metadata = {
+  title: "Portfolio Guus Nohlmans",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body
-      >
-        <title>Guus Nohlmans Portfolio</title>
+      <body>
         {children}
       </body>
     </html>
