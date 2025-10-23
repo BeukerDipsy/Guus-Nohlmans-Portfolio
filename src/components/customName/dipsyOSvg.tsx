@@ -1,4 +1,4 @@
-export default function DipsySvg() {
+export default function DipsyOSvg() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="9rem" height="9rem" viewBox="0 0 120 161" fill="none">
       <g filter="url(#filter0_d_18_101)">

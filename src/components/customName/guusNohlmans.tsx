@@ -1,4 +1,4 @@
-import DipsySvg from "./dipsySvg";
+import DipsyOSvg from "./dipsyOSvg";
 import GrowingLetters from "./growingLetters";
 
 export default function GuusNohlmans( { onClick }: { onClick: () => void }) {
@@ -8,7 +8,7 @@ export default function GuusNohlmans( { onClick }: { onClick: () => void }) {
       <div className="flex">
         <GrowingLetters text="N" />
         <div className="mt-5 -mx-4 hover:scale-113 transition">
-          <DipsySvg />
+          <DipsyOSvg />
         </div>
         <GrowingLetters text="hlmans" />
       </div>
