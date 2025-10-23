@@ -30,7 +30,7 @@ export default function Home() {
         <section id="aboutMe" className="py-8 md:py-16">
           <div className="flex flex-col md:flex-row md:justify-between min-h-screen font-bold w-full p-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
-              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-center md:text-left">
+              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-left">
                 About me
               </h1>
               <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16  md:pr-0">
