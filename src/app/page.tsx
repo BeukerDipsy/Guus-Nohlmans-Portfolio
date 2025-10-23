@@ -20,7 +20,7 @@ export default function Home() {
         <section id="hero">
           <div className="flex flex-col items-center justify-center min-h-screen w-full p-4">
             <GuusNohlmans onClick={() => scrollToSection("aboutMe")} />
-            <h2 className="text-4xl -mt-6 text-secondaryYellow text-center">
+            <h2 className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition" onClick={() => scrollToSection("projects")}>
               Turning creative ideas into creative applications.
             </h2>
           </div>
