@@ -28,16 +28,16 @@ export default function Home() {
 
         {/** About Me section **/}
         <section id="aboutMe" className="py-8 md:py-16">
-          <div className="flex flex-col md:flex-row justify-between min-h-screen font-bold w-full p-4">
-            <div className="flex flex-col flex-wrap">
+          <div className="flex flex-col md:flex-row md:justify-between min-h-screen font-bold w-full p-4">
+            <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
               <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-center md:text-left">
                 About me
               </h1>
-              <p className="text-[1.5rem] md:text-[1.7rem] pt-4">
+              <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16  md:pr-0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis augue eu blandit accumsan. Quisque imperdiet nisi justo. Donec metus augue, tristique eget auctor eu, mattis ac arcu. Mauris consectetur turpis et risus rhoncus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet nisi justo.
               </p>
             </div>
-            <DipsyFace className="pt-10 md:pt-20" />
+            <DipsyFace className="pt-10 md:pt-17 self-center md:self-auto scale-70 xs:scale-75 sm:scale-80 md:scale-85 lg:scale-90 xl:scale-95 2xl:scale-100" />
           </div>
         </section>
 
