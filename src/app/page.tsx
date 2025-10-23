@@ -1,8 +1,13 @@
+import GuusNohlmans from "@/components/customName/guusNohlmans";
+
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-8xl font-bold">Guus Nohlmans</h1>
+    <>
+    <GuusNohlmans />
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 max-w-[1440px] w-full mx-auto">
+      <GuusNohlmans />
       <h2 className="text-4xl mt-4 mb-8 text-secondaryYellow">turning creative ideas into creative applications</h2>
     </div>
+    </>
   );
 }
