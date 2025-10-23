@@ -7,7 +7,7 @@ export default function NavFooter() {
   };
   return (
     <nav className="backdrop-blur-xs shadow-xl border rounded-4xl items-center fixed bottom-10 left-1/2 transform -translate-x-1/2 z-10">
-      <ul className="flex justify-center space-x-7 p-4 text-lg">
+      <ul className="flex justify-center space-x-7 p-4 text-6xl md:text-xl">
         <li>
           <button className="hover:underline hover:text-secondaryYellow hover:scale-110 transition-transform cursor-pointer" onClick={() => scrollToSection("hero")}>Home</button>
         </li>
