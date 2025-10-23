@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center min-h-screen w-full p-4">
             <GuusNohlmans onClick={() => scrollToSection("aboutMe")} />
             <h2 className="text-4xl -mt-6 text-secondaryYellow text-center">
-              turning creative ideas into creative applications
+              Turning creative ideas into creative applications.
             </h2>
           </div>
         </section>
