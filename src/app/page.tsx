@@ -1,5 +1,6 @@
 "use client"
 import GuusNohlmans from "@/components/customName/guusNohlmans";
+import NavFooter from "@/components/navFooter";
 
 export default function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -8,9 +9,11 @@ export default function Home() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <>
+
+    <NavFooter />
     {/** Hero section **/}
       <section id="hero"> 
         <div className="flex flex-col items-center justify-center min-h-screen max-w-[1440px] w-full mx-auto">
