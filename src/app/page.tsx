@@ -2,10 +2,10 @@
 import GuusNohlmans from "@/components/customName/guusNohlmans";
 
 export default function Home() {
-  const scrollToSection = () => {
-    const aboutMeSection = document.getElementById("aboutMe");
-    if (aboutMeSection) {
-      aboutMeSection.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
   return (
@@ -13,7 +13,7 @@ export default function Home() {
     {/** Hero section **/}
       <section id="hero"> 
         <div className="flex flex-col items-center justify-center min-h-screen max-w-[1440px] w-full mx-auto">
-          <GuusNohlmans onClick={scrollToSection} />
+          <GuusNohlmans onClick={() => scrollToSection("aboutMe")} />
           <h2 className="text-4xl -mt-6 text-secondaryYellow">turning creative ideas into creative applications</h2>
         </div>
       </section>
