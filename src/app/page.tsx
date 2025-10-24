@@ -14,6 +14,8 @@ export default function Home() {
     }
   };
 
+
+
   useEffect(() => {
     const ids = Array.from(
       document.getElementsByTagName("section")
@@ -24,12 +26,12 @@ export default function Home() {
 
   return (
     <>
-      <main className="max-w-[1440px] mx-auto w-full">
-        <NavFooter sectionIds={sectionIds} />
+      <main className="max-w-[1440px] mx-auto w-full space-y-[50vh]">
+        
 
         {/** Hero section **/}
-        <section id="home">
-          <div className="flex flex-col items-center justify-center min-h-screen w-full p-4">
+        <section id="home" className="pt-[40vh]">
+          <div className="flex flex-col items-center justify-center w-full px-4">
             <GuusNohlmans onClick={() => scrollToSection("about")} />
             <h2 className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition z-0" onClick={() => scrollToSection("projects")}>
               Turning creative ideas into creative applications.
@@ -40,11 +42,11 @@ export default function Home() {
         {/** About Me section **/}
         <section
           id="about"
-          className="max-h-screen h-screen overflow-hidden flex items-center"
+          className="overflow-hidden flex items-start"
         >
-          <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full p-4 items-center ">
+          <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
-              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-left text-secondaryYellow">
+              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-left">
                 About me
               </h1>
               <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16 md:pr-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis augue eu blandit accumsan. Quisque imperdiet nisi justo. Donec metus augue, tristique eget auctor eu, mattis ac arcu. Mauris consectetur turpis et risus rhoncus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet nisi justo. </p>
@@ -57,26 +59,27 @@ export default function Home() {
 
         {/** Skills section **/}
         <section id="skills">
-          <div className="flex flex-col items-center justify-center min-h-screen mx-auto w-full p-4">
+          <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2>
           </div>
         </section>
 
         {/** Projects section **/}
-        <section id="projects" >
-          <div className="flex flex-col items-center justify-center min-h-screen mx-auto w-full p-4">
+        <section id="projects">
+          <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Projects</h2>
           </div>
         </section>
 
         {/** Contact section **/}
-        <section id="contact">
-          <div className="flex flex-col justify-center min-h-screen w-full mx-auto w-full p-4">
+        <section id="contact" className="pb-[20vh] ">
+          <div className="flex flex-col justify-center w-full mx-auto w-full px-4">
             <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-secondaryYellow font-bold text-left ">Contact me</h1>
             <ContactBox />
           </div>
         </section>
       </main>
+      <NavFooter sectionIds={sectionIds} />
     </>
   );
 }
