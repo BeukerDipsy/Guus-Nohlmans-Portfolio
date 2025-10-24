@@ -2,7 +2,7 @@
 import GuusNohlmans from "@/components/customName/guusNohlmans";
 import NavFooter from "@/components/navFooter";
 import DipsyFace from "@/components/dipsyFace";
-import ContactBox from "@/components/contactBox";
+import ContactBox from "@/components/ContactBox/contactBox";
 
 export default function Home() {
   const scrollToSection = (sectionId: string) => {
