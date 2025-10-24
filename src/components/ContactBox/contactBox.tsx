@@ -12,7 +12,7 @@ export default function ContactBox() {
 
     <div className="flex row">
       {/** Een grote component **/}
-      <div className="w-[68%] p-8 rounded-2xl border bg-primaryYellow flex flex-col gap-4 mb-10 shadow-[1rem_1rem_0_rgba(0,0,0,0.18)] ">
+      <div className="w-[68%] p-8 rounded-2xl border bg-primaryYellow flex flex-col gap-4 shadow-[1rem_1rem_0_rgba(0,0,0,0.18)]">
         <div className="flex flex-row gap-4">
           <InputField FieldName="Name" placeholder="Your name" />
           <InputField FieldName="Email" placeholder="Your email" />
@@ -28,7 +28,7 @@ export default function ContactBox() {
       </div>
 
       {/** Components per box **/}
-      <div className="pl-10 space-y-6 flex flex-col w-[32%]  ">
+      <div className="pl-10 space-y-6 flex flex-col w-[32%]">
         <InfoBox title="Email" description="example.mail@gmail.com" />
         <InfoBox title="Phone" description="+31 6 12345678" />
         <InfoBox title="Availability" description="Available" />
