@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <main className="max-w-[1440px] mx-auto w-full">
-        <NavFooter />
+        <NavFooter sectionIds={Array.from(document.getElementsByTagName("section")).map(section => section.id)} />
 
         {/** Hero section **/}
         <section id="hero">
@@ -53,7 +53,7 @@ export default function Home() {
         </section>
 
         {/** Projects section **/}
-        <section id="projects">
+        <section id="projects" >
           <div className="flex flex-col items-center justify-center min-h-screen mx-auto w-full p-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Projects</h2>
           </div>
