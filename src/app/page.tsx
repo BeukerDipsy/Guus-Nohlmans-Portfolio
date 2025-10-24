@@ -18,9 +18,9 @@ export default function Home() {
         <NavFooter sectionIds={Array.from(document.getElementsByTagName("section")).map(section => section.id)} />
 
         {/** Hero section **/}
-        <section id="hero">
+        <section id="home">
           <div className="flex flex-col items-center justify-center min-h-screen w-full p-4">
-            <GuusNohlmans onClick={() => scrollToSection("aboutMe")} />
+            <GuusNohlmans onClick={() => scrollToSection("about")} />
             <h2 className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition z-0" onClick={() => scrollToSection("projects")}>
               Turning creative ideas into creative applications.
             </h2>
@@ -29,7 +29,7 @@ export default function Home() {
 
         {/** About Me section **/}
         <section
-          id="aboutMe"
+          id="about"
           className="max-h-screen h-screen overflow-hidden flex items-center"
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full p-4 items-center ">
