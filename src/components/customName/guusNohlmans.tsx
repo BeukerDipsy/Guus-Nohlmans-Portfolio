@@ -7,7 +7,7 @@ export default function GuusNohlmans( { onClick }: { onClick: () => void }) {
       <GrowingLetters text="Guus" />
       <div className="flex">
         <GrowingLetters text="N" />
-        <div className="mt-5 -mx-4 hover:scale-113 transition">
+        <div className="mt-9 -ml-5 -mr-4 hover:scale-113 transition">
           <DipsyOSvg />
         </div>
         <GrowingLetters text="hlmans" />

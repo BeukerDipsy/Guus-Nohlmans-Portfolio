@@ -8,9 +8,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Portfolio Guus Nohlmans",
+  title: "Guus Nohlmans",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon2.ico",
   },
 };
 
