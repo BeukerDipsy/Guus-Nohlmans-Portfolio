@@ -4,13 +4,14 @@ import NavFooter from "@/components/navFooter";
 import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
 import { useEffect, useState } from "react";
+import ProjectCard from "@/components/projectCard";
 
 export default function Home() {
   const [sectionIds, setSectionIds] = useState<string[]>([]);
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "center"});
+      section.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -27,7 +28,7 @@ export default function Home() {
   return (
     <>
       <main className="max-w-[1440px] mx-auto w-full space-y-[50vh]">
-        
+
 
         {/** Hero section **/}
         <section id="home" className="pt-[40vh]">
@@ -46,7 +47,7 @@ export default function Home() {
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
-              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-left">
+              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0px_5px_2px_rgb(0_0_0/0.18)] text-left">
                 About me
               </h1>
               <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16 md:pr-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis augue eu blandit accumsan. Quisque imperdiet nisi justo. Donec metus augue, tristique eget auctor eu, mattis ac arcu. Mauris consectetur turpis et risus rhoncus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet nisi justo. </p>
@@ -68,13 +69,18 @@ export default function Home() {
         <section id="projects">
           <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Projects</h2>
+            <div className="flex flex-row w-full justify-between space-x-[2rem]">
+              <ProjectCard title="Project 1" description="Description for project 1" imagePath="/path/to/image1.jpg" />
+              <ProjectCard title="Project 2" description="Description for project 2" imagePath="/path/to/image2.jpg" />
+              <ProjectCard title="Project 3" description="Description for project 3" imagePath="/path/to/image3.jpg" />
+            </div>
           </div>
         </section>
 
         {/** Contact section **/}
         <section id="contact" className="pb-[20vh] ">
-          <div className="flex flex-col justify-center w-full mx-auto w-full px-4">
-            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-secondaryYellow font-bold text-left ">Contact me</h1>
+          <div className="flex flex-col justify-center w-full mx-auto px-4">
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0px_5px_2px_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left ">Contact me</h1>
             <ContactBox />
           </div>
         </section>
