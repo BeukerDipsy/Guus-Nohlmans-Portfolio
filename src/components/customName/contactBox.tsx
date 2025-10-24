@@ -2,7 +2,9 @@
 
 export default function ContactBox() {
   return (
+   
     <div className="flex row">
+      {/** Een grote component **/}
       <div className=" w-[68%] p-8 rounded-2xl border border-secondaryYellow ">
         <div className="flex flex-row gap-4 mb-4">
           <div className="">
@@ -24,7 +26,7 @@ export default function ContactBox() {
         </div>
         <button className="bg-secondaryYellow text-secondaryGreen font-semibold py-2 px-4 rounded-md hover:bg-yellow-400 transition">Send Message</button>
       </div>
-
+      {/** Components per box **/}
       <div className="pl-10 space-y-6 flex flex-col w-[32%]  ">
         <div className=" w-full h-full w-[90%] p-4 rounded-2xl border border-secondaryYellow flex flex-row ">
           <div className="h-full w-[29%] rounded-2xl border border-secondaryYellow">
