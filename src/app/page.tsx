@@ -2,6 +2,7 @@
 import GuusNohlmans from "@/components/customName/guusNohlmans";
 import NavFooter from "@/components/navFooter";
 import DipsyFace from "@/components/dipsyFace";
+import ContactBox from "@/components/customName/contactBox";
 
 export default function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -57,8 +58,9 @@ export default function Home() {
 
         {/** Contact section **/}
         <section id="contact">
-          <div className="flex flex-col items-center justify-center min-h-screen w-full mx-auto w-full p-4">
-            <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Contact</h2>
+          <div className="flex flex-col justify-center min-h-screen w-full mx-auto w-full p-4">
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] font-bold text-left ">Contact me</h1>
+            <ContactBox />
           </div>
         </section>
       </main>
