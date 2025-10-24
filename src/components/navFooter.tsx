@@ -14,6 +14,8 @@ export default function NavFooter({ sectionIds }: { sectionIds: string[] }) {
   };
 
   useEffect(() => {
+    if (!sectionIds.length) return;
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -22,6 +24,7 @@ export default function NavFooter({ sectionIds }: { sectionIds: string[] }) {
           }
         });
       },
+      { root: null, threshold: 0.6 }
     );
 
     sectionIds.forEach(sectionId => {
@@ -30,7 +33,7 @@ export default function NavFooter({ sectionIds }: { sectionIds: string[] }) {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [sectionIds]);
 
   return (
     <nav className="backdrop-blur-xs shadow-xl border rounded-4xl items-center fixed bottom-10 left-1/2 transform -translate-x-1/2 z-10 bg-secondaryGreen/40 backdrop-secondaryGreen">
@@ -38,11 +41,10 @@ export default function NavFooter({ sectionIds }: { sectionIds: string[] }) {
         {sectionIds.map(section => (
           <li key={section}>
             <button
-              className={`transition-transform cursor-pointer ${
-                activeSection === section
+              className={`transition-transform cursor-pointer ${activeSection === section
                   ? "text-secondaryYellow underline scale-110"
                   : "hover:underline hover:text-secondaryYellow hover:scale-110"
-              }`}
+                }`}
               onClick={() => scrollToSection(section)}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}

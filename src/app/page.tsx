@@ -3,8 +3,10 @@ import GuusNohlmans from "@/components/customName/guusNohlmans";
 import NavFooter from "@/components/navFooter";
 import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [sectionIds, setSectionIds] = useState<string[]>([]);
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -12,10 +14,18 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    const ids = Array.from(
+      document.getElementsByTagName("section")
+    ).map(sec => sec.id);
+
+    setSectionIds(ids);
+  }, []);
+
   return (
     <>
       <main className="max-w-[1440px] mx-auto w-full">
-        <NavFooter sectionIds={Array.from(document.getElementsByTagName("section")).map(section => section.id)} />
+        <NavFooter sectionIds={sectionIds} />
 
         {/** Hero section **/}
         <section id="home">
