@@ -10,7 +10,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Guus Nohlmans",
   icons: {
-    icon: "/favicon2.ico",
+    icon: "/favicon.ico",
   },
 };
 
