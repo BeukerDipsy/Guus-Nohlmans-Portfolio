@@ -71,8 +71,8 @@ export default function Home() {
             <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0px_5px_2px_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-[1rem]">Projects</h1>
             <div className="flex flex-row w-full justify-between space-x-[1.5rem]">
               <ProjectCard title="Sabroso" description="Developing a smart restaurant ordering system. Orders are instantly sent to the kitchen or bar, streamlining the workflow and improving the overall dining experience." imagePath="/images/Sabroso.svg" />
-              <ProjectCard title="Actipulse" description="Description for project 3" imagePath="/images/Actipulse.svg" />
-              <ProjectCard title="WiebelToren" description="Description for project 2" imagePath="/images/WiebelToren.svg" />
+              <ProjectCard title="Actipulse" description="Developing an application/device to improve productivity and health by tracking sitting-habits." imagePath="/images/Actipulse.svg" />
+              <ProjectCard title="WiebelToren" description="Designing and developing a game for the less-abled community, played with the Pillo from Hulan." imagePath="/images/WiebelToren.svg" />
             </div>
           </div>
         </section>
