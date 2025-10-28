@@ -4,13 +4,14 @@ import NavFooter from "@/components/navFooter";
 import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
 import { useEffect, useState } from "react";
+import ProjectCard from "@/components/projectCard";
 
 export default function Home() {
   const [sectionIds, setSectionIds] = useState<string[]>([]);
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "center"});
+      section.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -26,11 +27,11 @@ export default function Home() {
 
   return (
     <>
-      <main className="max-w-[1440px] mx-auto w-full space-y-[50vh]">
-        
+      <main className="max-w-[1440px] mx-auto w-full space-y-[40vh]">
+
 
         {/** Hero section **/}
-        <section id="home" className="pt-[40vh]">
+        <section id="home" className="pt-[37vh] pb-[10vh]">
           <div className="flex flex-col items-center justify-center w-full px-4">
             <GuusNohlmans onClick={() => scrollToSection("about")} />
             <h2 className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition z-0" onClick={() => scrollToSection("projects")}>
@@ -42,13 +43,11 @@ export default function Home() {
         {/** About Me section **/}
         <section
           id="about"
-          className="overflow-hidden flex items-start"
+          className="overflow-hidden flex items-start pb-[10vh]"
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
-              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-left">
-                About me
-              </h1>
+              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">About me</h1>
               <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16 md:pr-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis augue eu blandit accumsan. Quisque imperdiet nisi justo. Donec metus augue, tristique eget auctor eu, mattis ac arcu. Mauris consectetur turpis et risus rhoncus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet nisi justo. </p>
             </div>
 
@@ -58,23 +57,28 @@ export default function Home() {
 
 
         {/** Skills section **/}
-        <section id="skills">
+        <section id="skills" className="pb-[10vh]">
           <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2>
           </div>
         </section>
 
         {/** Projects section **/}
-        <section id="projects">
-          <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
-            <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Projects</h2>
+        <section id="projects" className="pb-[10vh]">
+          <div className="flex flex-col justify-center mx-auto w-full px-4">
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-[1rem]">Projects</h1>
+            <div className="flex flex-row w-full justify-between space-x-[1.5rem]">
+              <ProjectCard title="Sabroso" description="Developing a smart restaurant ordering system. Orders are instantly sent to the kitchen or bar, streamlining the workflow and improving the overall dining experience." imagePath="/images/Sabroso.svg" />
+              <ProjectCard title="Actipulse" description="Developing an application/device to improve productivity and health by tracking sitting-habits." imagePath="/images/Actipulse.svg" />
+              <ProjectCard title="WiebelToren" description="Designing and developing a game for the less-abled community, played with the Pillo from Hulan." imagePath="/images/WiebelToren.svg" />
+            </div>
           </div>
         </section>
 
         {/** Contact section **/}
-        <section id="contact" className="pb-[20vh] ">
-          <div className="flex flex-col justify-center w-full mx-auto w-full px-4">
-            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:_0px_5px_2px_rgb(0_0_0_/_0.18)] text-secondaryYellow font-bold text-left ">Contact me</h1>
+        <section id="contact" className="pb-[17vh] ">
+          <div className="flex flex-col justify-center w-full mx-auto px-4">
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Contact me</h1>
             <ContactBox />
           </div>
         </section>

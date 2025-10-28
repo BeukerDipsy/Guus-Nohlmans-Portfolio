@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function NavFooter({ sectionIds }: { sectionIds: string[] }) {
   const sections = sectionIds;
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
