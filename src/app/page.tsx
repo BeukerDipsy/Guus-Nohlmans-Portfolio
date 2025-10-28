@@ -69,7 +69,7 @@ export default function Home() {
         <section id="projects">
           <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Projects</h2>
-            <div className="flex flex-row w-full justify-between">
+            <div className="flex flex-row w-full justify-between space-x-[1.5rem]">
               <ProjectCard title="Project 1" description="Description for project 1" imagePath="/images/Sabroso.svg" />
               <ProjectCard title="Project 3" description="Description for project 3" imagePath="/images/Actipulse.svg" />
               <ProjectCard title="Project 2" description="Description for project 2" imagePath="/images/WiebelToren.svg" />
