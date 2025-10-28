@@ -47,9 +47,7 @@ export default function Home() {
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
-              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0px_5px_2px_rgb(0_0_0/0.18)] text-left">
-                About me
-              </h1>
+              <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">About me</h1>
               <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16 md:pr-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis augue eu blandit accumsan. Quisque imperdiet nisi justo. Donec metus augue, tristique eget auctor eu, mattis ac arcu. Mauris consectetur turpis et risus rhoncus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet nisi justo. </p>
             </div>
 
@@ -68,7 +66,7 @@ export default function Home() {
         {/** Projects section **/}
         <section id="projects" className="pb-[10vh]">
           <div className="flex flex-col justify-center mx-auto w-full px-4">
-            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0px_5px_2px_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-[1rem]">Projects</h1>
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-[1rem]">Projects</h1>
             <div className="flex flex-row w-full justify-between space-x-[1.5rem]">
               <ProjectCard title="Sabroso" description="Developing a smart restaurant ordering system. Orders are instantly sent to the kitchen or bar, streamlining the workflow and improving the overall dining experience." imagePath="/images/Sabroso.svg" />
               <ProjectCard title="Actipulse" description="Developing an application/device to improve productivity and health by tracking sitting-habits." imagePath="/images/Actipulse.svg" />
@@ -80,7 +78,7 @@ export default function Home() {
         {/** Contact section **/}
         <section id="contact" className="pb-[17vh] ">
           <div className="flex flex-col justify-center w-full mx-auto px-4">
-            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0px_5px_2px_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Contact me</h1>
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Contact me</h1>
             <ContactBox />
           </div>
         </section>
