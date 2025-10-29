@@ -5,6 +5,8 @@ import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
 import { useEffect, useState } from "react";
 import ProjectCard from "@/components/projectCard";
+import Education from "@/components/Skills/education";
+import Skills from "@/components/Skills/skills";
 
 export default function Home() {
   const [sectionIds, setSectionIds] = useState<string[]>([]);
@@ -59,6 +61,10 @@ export default function Home() {
         <section id="skills" className="pb-[10vh]">
           <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2>
+            <div className="flex-row flex justify-between w-full mt-8 space-x-80">
+              <Education/>
+              <Skills/>
+            </div>
           </div>
         </section>
 
