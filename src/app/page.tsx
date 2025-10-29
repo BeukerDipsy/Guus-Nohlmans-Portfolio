@@ -5,13 +5,14 @@ import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
 import { useEffect, useState } from "react";
 import ProjectCard from "@/components/projectCard";
+import ProjectCard from "@/components/projectCard";
 
 export default function Home() {
   const [sectionIds, setSectionIds] = useState<string[]>([]);
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "center" });
+      section.scrollIntoView({ behavior: "smooth", block: "center"  });
     }
   };
 
@@ -29,8 +30,11 @@ export default function Home() {
     <>
       <main className="max-w-[1440px] mx-auto w-full space-y-[40vh]">
 
+      <main className="max-w-[1440px] mx-auto w-full space-y-[40vh]">
+
 
         {/** Hero section **/}
+        <section id="home" className="pt-[37vh] pb-[10vh]">
         <section id="home" className="pt-[37vh] pb-[10vh]">
           <div className="flex flex-col items-center justify-center w-full px-4">
             <GuusNohlmans onClick={() => scrollToSection("about")} />
@@ -43,7 +47,7 @@ export default function Home() {
         {/** About Me section **/}
         <section
           id="about"
-          className="overflow-hidden flex items-start pb-[10vh]"
+          className="overflow-hidden flex items-start pb-[10vh] pb-[10vh]"
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
@@ -72,12 +76,20 @@ export default function Home() {
               <ProjectCard title="Actipulse" description="Developing an application/device to improve productivity and health by tracking sitting-habits." imagePath="/images/Actipulse.svg" />
               <ProjectCard title="WiebelToren" description="Designing and developing a game for the less-abled community, played with the Pillo from Hulan." imagePath="/images/WiebelToren.svg" />
             </div>
+        <section id="projects" className="pb-[10vh]">
+          <div className="flex flex-col justify-center mx-auto w-full px-4">
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-[1rem]">Projects</h1>
+            <div className="flex flex-row w-full justify-between space-x-[1.5rem]">
+              <ProjectCard title="Sabroso" description="Developing a smart restaurant ordering system. Orders are instantly sent to the kitchen or bar, streamlining the workflow and improving the overall dining experience." imagePath="/images/Sabroso.svg" />
+              <ProjectCard title="Actipulse" description="Developing an application/device to improve productivity and health by tracking sitting-habits." imagePath="/images/Actipulse.svg" />
+              <ProjectCard title="WiebelToren" description="Designing and developing a game for the less-abled community, played with the Pillo from Hulan." imagePath="/images/WiebelToren.svg" />
+            </div>
           </div>
         </section>
 
         {/** Contact section **/}
-        <section id="contact" className="pb-[17vh] ">
-          <div className="flex flex-col justify-center w-full mx-auto px-4">
+        <section id="contact" className="pb-[17vh]">
+          <div className="flex flex-col justify-center w-full mx-auto">
             <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Contact me</h1>
             <ContactBox />
           </div>
