@@ -6,7 +6,7 @@ import EmailForm from "./emailForm";
 
 
 export default function ContactBox() {
-  const [fillColor, setFillColor] = useState("#FFF99A");
+  const [fillColor] = useState("#FFF99A");
 
   return (
     <div className="flex flex-row justify-between">
