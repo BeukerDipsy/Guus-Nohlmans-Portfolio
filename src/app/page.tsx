@@ -60,8 +60,8 @@ export default function Home() {
         {/** Skills section **/}
         <section id="skills" className="pb-[10vh]">
           <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
-            <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2>
-            <div className="flex-row flex justify-between w-full mt-8 space-x-130">
+            {/* <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2> */}
+            <div className="flex-row flex justify-between w-full mt-8 space-x-100">
               <Education/>
               <Skills/>
             </div>
