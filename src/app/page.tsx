@@ -61,7 +61,7 @@ export default function Home() {
         <section id="skills" className="pb-[10vh]">
           <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
             <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2>
-            <div className="flex-row flex justify-between w-full mt-8 space-x-120">
+            <div className="flex-row flex justify-between w-full mt-8 space-x-130">
               <Education/>
               <Skills/>
             </div>
