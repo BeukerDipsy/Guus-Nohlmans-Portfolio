@@ -5,7 +5,6 @@ import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
 import { useEffect, useState } from "react";
 import ProjectCard from "@/components/projectCard";
-import ProjectCard from "@/components/projectCard";
 
 export default function Home() {
   const [sectionIds, setSectionIds] = useState<string[]>([]);
@@ -30,11 +29,7 @@ export default function Home() {
     <>
       <main className="max-w-[1440px] mx-auto w-full space-y-[40vh]">
 
-      <main className="max-w-[1440px] mx-auto w-full space-y-[40vh]">
-
-
         {/** Hero section **/}
-        <section id="home" className="pt-[37vh] pb-[10vh]">
         <section id="home" className="pt-[37vh] pb-[10vh]">
           <div className="flex flex-col items-center justify-center w-full px-4">
             <GuusNohlmans onClick={() => scrollToSection("about")} />
@@ -47,7 +42,7 @@ export default function Home() {
         {/** About Me section **/}
         <section
           id="about"
-          className="overflow-hidden flex items-start pb-[10vh] pb-[10vh]"
+          className="overflow-hidden flex items-start pb-[10vh]"
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
