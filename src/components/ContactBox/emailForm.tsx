@@ -1,6 +1,5 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import InputField from "./InputField";
 import { useState } from "react";
 
 export default function EmailForm() {
