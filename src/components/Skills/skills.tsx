@@ -27,13 +27,11 @@ export default function Skills() {
           </ul>
           <hr className="border-1 my-4 rounded-full" />
           <h2 className="text-[1.8rem] font-semibold">Data Management</h2>
-          <div className="grid grid-cols-2 gap-4 text-[1.44rem]">
-            <ul className="list-disc list-inside">
-              <li>SQL</li>
+          <div className="grid grid-cols-2 gap-2 text-[1.44rem]">
+            <li className="list-disc list-inside">SQL</li>
+            <li className="list-disc list-inside">MSSQL/MySQL</li>
+            <ul className="list-disc list-inside w-120">
               <li>Database design</li>
-            </ul>
-            <ul className="list-disc list-inside">
-              <li>MSSQL/MySQL</li>
             </ul>
           </div>
 
