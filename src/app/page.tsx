@@ -49,7 +49,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
               <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">About me</h1>
-              <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16 md:pr-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis augue eu blandit accumsan. Quisque imperdiet nisi justo. Donec metus augue, tristique eget auctor eu, mattis ac arcu. Mauris consectetur turpis et risus rhoncus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet nisi justo. </p>
+              <p className="text-[1.5rem] md:text-[1.7rem] pt-8 md:pt-16 md:pr-0 font-medium leading-8"> I&apos;m Guus, a student at Fontys University of Applied Sciences with a strong passion for development and technology. 
+                <br/> <br/>
+                I love bringing ideas to life through code and finding unique approaches to tackle problems. 
+                <br className="py-1" />
+                I enjoy working with others and can easily lose track of time when working on a project I am passionate about. In my free time, I go to my local scouting, spend time with friends and work on personal projects. </p>
             </div>
 
             <DipsyFace className="pt-10 md:pt-17 self-center md:self-auto scale-70 xs:scale-75 sm:scale-80 md:scale-85 lg:scale-90 xl:scale-95 2xl:scale-100" />
