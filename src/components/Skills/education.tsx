@@ -28,19 +28,19 @@ export default function Education() {
 
   return (
     <div className="px-8 py-6 rounded-2xl w-full bg-primaryYellow shadow-[0.8rem_0.8rem_0_rgba(0,0,0,0.12)] items-start h-full text-primaryGreen">
-      <h1 className="text-[3.5rem] [text-shadow:0.25rem_0.25rem_0rem_rgb(0_0_0_/0.18)] font-bold">Education</h1>
+      <h1 className="text-[3.15rem] [text-shadow:0.25rem_0.25rem_0rem_rgb(0_0_0_/0.18)] font-bold">Education</h1>
       <hr className="border-2 my-1 rounded-full" />
       <div className="flex-col">
         <div>
-          <h2 className="leading-none text-[2rem] pt-4 font-semibold">HAVO - Informatics</h2>
-          <h3 className="text-[1.25rem]">Trevianum scholengroep</h3>
+          <h2 className="leading-none text-[1.8rem] pt-4 font-semibold">HAVO - Informatics</h2>
+          <h3 className="text-[1.13rem]">Trevianum scholengroep</h3>
         </div>
         <div className="mt-4 relative ml-2.5 pl-8 border-l-4">
           {TrevianumData.map((entry, index) => (
             <div key={index} className="flex items-start mb-6 last:mb-0">
               <div className="bg-primaryGreen rounded-full h-5 w-5 absolute -left-3"></div>
               <div className="">
-                <h2 className="leading-none font-semibold text-[1.5rem]">{entry.category}</h2>
+                <h2 className="leading-none font-semibold text-[1.35rem]">{entry.category}</h2>
                 <p className="font-regular text-[1.25rem]">{entry.date}</p>
               </div>
             </div>
@@ -50,15 +50,15 @@ export default function Education() {
       <hr className="border-1 my-6 rounded-full" />
       <div className="flex-col">
         <div>
-          <h2 className="leading-none text-[2rem] font-semibold">HBO ICT</h2>
-          <h3 className="text-[1.25rem]">Fontys University of Applied Sciences</h3>
+          <h2 className="leading-none text-[1.8rem] font-semibold">HBO ICT</h2>
+          <h3 className="text-[1.13rem]">Fontys University of Applied Sciences</h3>
         </div>
         <div className="mt-4 relative ml-2.5 pl-8 border-l-4">
           {FontysData.map((entry, index) => (
             <div key={index} className="flex items-start mb-6 last:mb-0">
               <div className="bg-primaryGreen rounded-full h-5 w-5 absolute -left-3"></div>
               <div className="">
-                <h2 className="leading-none font-semibold text-[1.5rem]">{entry.category}</h2>
+                <h2 className="leading-none font-semibold text-[1.35rem]">{entry.category}</h2>
                 <p className="font-regular text-[1.25rem]">{entry.date}</p>
               </div>
             </div>
