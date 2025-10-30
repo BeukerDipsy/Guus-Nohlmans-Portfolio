@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
-    <div className="px-8 py-6 rounded-2xl w-full bg-backgroundGreen inset-shadow-[0.5rem_0.5rem_0_rgba(0,0,0,0.12)] items-start">
-      <h1 className="text-[3.5rem] [text-shadow:0.3rem_0.3rem_0rem_rgb(0_0_0_/0.18)] font-bold">Skills</h1>
+    <div className="px-8 py-6 rounded-2xl w-full bg-primaryYellow shadow-[0.8rem_0.8rem_0_rgba(0,0,0,0.12)] items-start text-primaryGreen h-full">
+      <h1 className="text-[3.5rem] [text-shadow:0.23rem_0.23rem_0rem_rgb(0_0_0_/0.18)] font-bold">Skills</h1>
       <hr className="border-2 my-1 rounded-full" />
       <div className="mt-4 flex flex-col gap-4">
         <div className="w-full">

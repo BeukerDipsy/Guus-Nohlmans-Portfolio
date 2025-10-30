@@ -27,8 +27,8 @@ export default function Education() {
   ];
 
   return (
-    <div className="px-8 py-6 rounded-2xl w-full bg-backgroundGreen inset-shadow-[0.5rem_0.5rem_0_rgba(0,0,0,0.12)] items-start h-full">
-      <h1 className="text-[3.5rem] [text-shadow:0.3rem_0.3rem_0rem_rgb(0_0_0_/0.18)] font-bold">Education</h1>
+    <div className="px-8 py-6 rounded-2xl w-full bg-primaryYellow shadow-[0.8rem_0.8rem_0_rgba(0,0,0,0.12)] items-start h-full text-primaryGreen">
+      <h1 className="text-[3.5rem] [text-shadow:0.25rem_0.25rem_0rem_rgb(0_0_0_/0.18)] font-bold">Education</h1>
       <hr className="border-2 my-1 rounded-full" />
       <div className="flex-col">
         <div>
@@ -38,7 +38,7 @@ export default function Education() {
         <div className="mt-4 relative ml-2.5 pl-8 border-l-4">
           {TrevianumData.map((entry, index) => (
             <div key={index} className="flex items-start mb-6 last:mb-0">
-              <div className="bg-primaryYellow rounded-full h-5 w-5 absolute -left-3"></div>
+              <div className="bg-primaryGreen rounded-full h-5 w-5 absolute -left-3"></div>
               <div className="">
                 <h2 className="leading-none font-semibold text-[1.5rem]">{entry.category}</h2>
                 <p className="font-regular text-[1.25rem]">{entry.date}</p>
@@ -56,7 +56,7 @@ export default function Education() {
         <div className="mt-4 relative ml-2.5 pl-8 border-l-4">
           {FontysData.map((entry, index) => (
             <div key={index} className="flex items-start mb-6 last:mb-0">
-              <div className="bg-primaryYellow rounded-full h-5 w-5 absolute -left-3"></div>
+              <div className="bg-primaryGreen rounded-full h-5 w-5 absolute -left-3"></div>
               <div className="">
                 <h2 className="leading-none font-semibold text-[1.5rem]">{entry.category}</h2>
                 <p className="font-regular text-[1.25rem]">{entry.date}</p>

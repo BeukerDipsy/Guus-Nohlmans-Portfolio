@@ -57,11 +57,11 @@ export default function Home() {
         </section>
 
 
-        {/** Skills section **/}
-        <section id="skills" className="pb-[10vh]">
-          <div className="flex flex-col items-center justify-center mx-auto w-full px-4">
-            {/* <h2 className="text-[1.75rem] md:text-[2.25rem] text-secondaryYellow text-center">Skills</h2> */}
-            <div className="flex-row flex justify-between w-full mt-8 space-x-100">
+        {/** Experience section **/}
+        <section id="experience" className="pb-[10vh]">
+          <div className="flex flex-col justify-center mx-auto w-full px-4">
+            <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Experience</h1>
+            <div className="flex-row flex justify-between w-full mt-2 space-x-95">
               <Education/>
               <Skills/>
             </div>
