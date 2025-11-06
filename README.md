@@ -24,7 +24,7 @@ Deze informatie is opgedeeld in secties
 
 ## 🛠️ Gebouwd met
 
-Dit portfolio is gemaakt met moderne webtechnologieën:
+Dit portfolio is gemaakt met onderstaande webtechnologieën:
 
 * [Next.js](https://nextjs.org/)
 * [React](https://react.dev/)
