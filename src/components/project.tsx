@@ -1,4 +1,4 @@
-export default function Project({ title, description }: { title: string, description: string }) {
+export default function Project({ title, shortDescription, description, children }: { title: string, shortDescription: string, description: string, children?: React.ReactNode }) {
   return (
     <section className="max-w-[900px] mx-auto w-full pt-[5vh]">
       <div>
@@ -11,8 +11,21 @@ export default function Project({ title, description }: { title: string, descrip
       <div className="mb-12">
         <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">{title}</h1>
         {/* <h1 className="text-5xl font-bold mb-6 text-secondaryYellow">{title}</h1> */}
-        <p className="text-2xl -mt-3 mb-7">{description}</p>
+        <p className="text-2xl -mt-3 mb-7">{shortDescription}</p>
         <img src={`images/${title}.png`} alt={title} className=" overflow-hidden w-full rounded-xl" />
+        {children}
+      </div>
+      <div className="mb-20">
+        <h2 className="text-3xl font-bold mb-4 text-secondaryYellow">Project Details</h2>
+        <p className="text-lg leading-7">
+          {description}
+        </p>
+      </div>
+      <div className="mb-20">
+        <h2 className="text-3xl font-bold mb-4 text-secondaryYellow">Media</h2>
+         <p className="text-lg leading-7">
+          More media coming soon...
+        </p>
       </div>
     </section>
 
