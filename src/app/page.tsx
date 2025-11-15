@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="max-w-[1440px] mx-auto w-full space-y-[40vh]">
+      <main className="mx-auto max-w-[1440px] w-full space-y-[40vh]">
 
         {/** Hero section **/}
         <section id="home" className="pt-[37vh] pb-[10vh]">
@@ -65,7 +65,7 @@ export default function Home() {
         <section id="experience" className="pb-[10vh]">
           <div className="flex flex-col justify-center mx-auto w-full px-4">
             <h1 className="text-[4rem] md:text-[6rem] [text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Experience</h1>
-            <div className="flex-row flex justify-between w-full mt-2 space-x-95">
+            <div className="flex-row flex justify-between w-full mt-2 space-x-1">
               <Education/>
               <Skills/>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <NavFooter sectionIds={sectionIds} />
+      {/* <NavFooter sectionIds={sectionIds} /> */}
     </>
   );
 }
