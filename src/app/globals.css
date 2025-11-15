@@ -3,9 +3,9 @@
 @theme {
   --color-primaryGreen: #7FB069;
   --color-primaryYellow: #FFFBBD;
-  --color-secondaryGreen: #26620B;
+  --color-secondaryGreen: #26620B ;
   --color-secondaryYellow: #FFF99A;
-  --color-backgroundGreen: #719D5D;
+  --color-backgroundGreen: #649C4B;
 }
 
 /* if only dark mode */
