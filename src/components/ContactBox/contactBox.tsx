@@ -9,7 +9,7 @@ export default function ContactBox() {
   const [fillColor] = useState("#FFF99A");
 
   return (
-    <div className="flex md:flex-row md:justify-between flex-col items-center md:items-start gap-y-10 md:gap-y-0">
+    <div className="flex md:flex-row md:justify-between flex-col items-center md:items-start gap-y-18 md:gap-y-0">
       <div className="w-full p-8 rounded-2xl border bg-primaryYellow flex flex-col gap-4 shadow-[1rem_1rem_0_rgba(0,0,0,0.18)]">
         <EmailForm />
       </div>

@@ -32,30 +32,38 @@ export default function EmailForm() {
   return (
     loading ? <p className="text-primaryGreen font-bold text-[2rem] m-auto">Sending email...</p> :
       <form onSubmit={sendEmail} className="text-secondaryGreen">
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row md:gap-4">
           <div className="w-full mb-4 flex-row flex gap-4 justify-between">
-            <div className="w-full">
-              <label className="block font-semibold text-lg">Name</label>
-              <input type="text" name="name" placeholder="Your name" required className="placeholder:text-primaryGreen w-full p-4 text-lg rounded-md border-3 border-primaryGreen bg-primaryYellow outline-none focus:border-secondaryGreen focus:border-3" />
+            <div className="w-full mb-6 md:mb-0">
+              <label className="block font-semibold text-4xl md:text-lg">Name</label>
+              <input type="text" name="name" placeholder="Your name" required className="placeholder:text-primaryGreen w-full p-6 md:p-4 text-4xl md:text-lg  rounded-xl md:rounded-md border-[0.4rem] md:border-[0.2rem] border-primaryGreen bg-primaryYellow outline-none focus:border-secondaryGreen" />
             </div>
             <div className="w-full">
-              <label className="block font-semibold text-lg">Email</label>
-              <input type="email" name="email" placeholder="Your email" required className="placeholder:text-primaryGreen w-full p-4 text-lg rounded-md border-3 border-primaryGreen bg-primaryYellow outline-none focus:border-secondaryGreen focus:border-3" />
+              <label className="block font-semibold text-4xl md:text-lg">Email</label>
+              <input type="email" name="email" placeholder="Your email" required className="placeholder:text-primaryGreen w-full p-6 md:p-4 text-4xl md:text-lg  rounded-xl md:rounded-md border-[0.4rem] md:border-[0.2rem] border-primaryGreen bg-primaryYellow outline-none focus:border-secondaryGreen" />
             </div>
           </div>
         </div>
-        <div className="w-full mb-4 ">
-          <label className="block font-semibold text-lg">Subject</label>
-          <input type="text" name="subject" placeholder="Subject" required className="placeholder:text-primaryGreen w-full p-4 text-lg rounded-md border-3 border-primaryGreen bg-primaryYellow outline-none focus:border-secondaryGreen focus:border-3" />
+        <div className="w-full mb-10 md:mb-4 ">
+          <label className="block font-semibold text-4xl md:text-lg">Subject</label>
+          <input type="text" name="subject" placeholder="Subject" required className="placeholder:text-primaryGreen w-full p-6 md:p-4 text-4xl md:text-lg  rounded-xl md:rounded-md border-[0.4rem] md:border-[0.2rem] border-primaryGreen bg-primaryYellow outline-none focus:border-secondaryGreen" />
         </div>
-        <div className="w-full mb-4 ">
-          <label className="block font-semibold text-lg">Message</label>
-          <textarea name="message" placeholder="Your message" required className="placeholder:text-primaryGreen border-primaryGreen w-full p-4 text-lg rounded-md border-3 bg-primaryYellow mb-4 h-32 outline-none focus:border-secondaryGreen focus:border-3"></textarea>
+        <div className="w-full mb-2 md:mb-4 ">
+          <label className="block font-semibold text-4xl md:text-lg">Message</label>
+          <textarea name="message" placeholder="Your message" required className="placeholder:text-primaryGreen border-primaryGreen w-full p-6 md:p-4 text-4xl md:text-lg rounded-xl md:rounded-md border-[0.4rem] md:border-[0.2rem] bg-primaryYellow mb-4 h-32 outline-none focus:border-secondaryGreen"></textarea>
         </div>
         <div className="flex flex-row justify-start items-center gap-4">
-          <button type="submit" className="bg-primaryGreen flex flex-row gap-2 text-secondaryYellow font-semibold p-3 rounded-md hover:bg-yellow-400 hover:text-secondaryGreen cursor-pointer shadow-[0.2rem_0.2rem_0_rgba(0,0,0,0.18)] active:shadow-none active:transition-none active:ml-[0.2rem] active:mt-[0.2rem] mb-[0.2rem] active:mb-0 transition-colors" onMouseOver={() => setFillColor(["#214013"])} onMouseOut={() => setFillColor(["#FFF99A"])}  >
-            <svg fill={fillColor[0]} viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 transition">
-              <path d="M31.376 0c-0.191 0-0.422 0.054-0.691 0.168l-29.833 12.659c-1.074 0.456-1.142 1.334-0.151 1.951l8.43 5.251c0.991 0.617 2.301 1.94 2.912 2.939l5.053 8.274c0.29 0.474 0.64 0.71 0.977 0.71 0.372 0 0.727-0.286 0.97-0.851l12.758-29.805c0.345-0.808 0.148-1.296-0.426-1.297zM10.174 18.248l-6.833-4.257 22.925-9.726-14.756 15.006c-0.451-0.4-0.909-0.757-1.337-1.023zM17.898 28.602l-4.076-6.672c-0.241-0.394-0.558-0.814-0.912-1.231l14.825-15.075z"></path>
+          <button type="submit" className="justify-center bg-primaryGreen flex flex-row gap-2 text-secondaryYellow font-semibold w-full py-6 md:w-auto md:p-3 rounded-md hover:bg-yellow-400 hover:text-secondaryGreen cursor-pointer shadow-[0.2rem_0.2rem_0_rgba(0,0,0,0.18)] active:shadow-none active:transition-none active:ml-[0.2rem] active:mt-[0.2rem] mb-[0.2rem] active:mb-0 transition-colors text-4xl md:text-lg" onMouseOver={() => setFillColor(["#214013"])} onMouseOut={() => setFillColor(["#FFF99A"])}  >
+            <svg
+              style={{ fill: fillColor[0] }}
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-hidden="true"
+              className="w-10 h-10 md:w-5 md:h-5 lg:w-6 lg:h-6 transition-all"
+            >
+              <path d="M31.376 0c-0.191 0-0.422 0.054-0.691 0.168l-29.833 12.659c-1.074 0.456-1.142 1.334-0.151 1.951l8.43 5.251c0.991 0.617 2.301 1.94 2.912 2.939l5.053 8.274c0.29 0.474 0.64 0.71 0.977 0.71 0.372 0 0.727-0.286 0.97-0.851l12.758-29.805c0.345-0.808 0.148-1.296-0.426-1.297zM10.174 18.248l-6.833-4.257 22.925-9.726-14.756 15.006c-0.451-0.4-0.909-0.757-1.337-1.023zM17.898 28.602l-4.076-6.672c-0.241-0.394-0.558-0.814-0.912-1.231l14.825-15.075z" />
             </svg>
             Send Message
           </button>
