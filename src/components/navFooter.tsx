@@ -37,7 +37,7 @@ export default function NavFooter({ sectionIds }: { sectionIds: string[] }) {
 
   return (
     <nav className="backdrop-blur-xs shadow-xl border rounded-4xl items-center fixed bottom-10 left-1/2 transform -translate-x-1/2 z-10 bg-secondaryGreen/40 backdrop-secondaryGreen">
-      <ul className="flex justify-center space-x-7 p-4 text-6xl md:text-xl">
+      <ul className="flex justify-center space-x-7 p-4 px-7 text-6xl md:text-xl">
         {sectionIds.map(section => (
           <li key={section}>
             <button
