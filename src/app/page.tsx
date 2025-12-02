@@ -64,7 +64,7 @@ export default function Home() {
         <section id="experience" className="pb-[10vh]">
           <div className="flex flex-col justify-center mx-auto w-full px-4">
             <h1 className="text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Experience</h1>
-            <div className="flex-col md:flex-row flex justify-between w-full mt-2 space-x-1">
+            <div className="flex-col md:flex-row flex justify-between w-full mt-2 space-x-1 space-y-15">
               <Education/>
               <Skills/>
             </div>
