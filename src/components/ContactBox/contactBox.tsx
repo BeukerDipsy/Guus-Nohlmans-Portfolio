@@ -9,11 +9,11 @@ export default function ContactBox() {
   const [fillColor] = useState("#FFF99A");
 
   return (
-    <div className="flex md:flex-row md:justify-between flex-col items-center md:items-start">
+    <div className="flex md:flex-row md:justify-between flex-col items-center md:items-start gap-y-10 md:gap-y-0">
       <div className="w-full p-8 rounded-2xl border bg-primaryYellow flex flex-col gap-4 shadow-[1rem_1rem_0_rgba(0,0,0,0.18)]">
         <EmailForm />
       </div>
-      {/* <div className="md:pl-10 space-y-7 flex justify-between flex-row md:flex-col w-full md:w-auto md:mx-auto ">
+      <div className="md:pl-10 md:space-y-7 flex justify-between flex-row md:flex-col w-full md:w-auto md:mx-auto ">
         <InfoBox title="Email" description="contact@guusn.nl">
           <svg
             className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16"
@@ -26,7 +26,8 @@ export default function ContactBox() {
             focusable="false"
           >
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-          </svg>    </InfoBox>
+          </svg>
+        </InfoBox>
         <InfoBox title="Phone" description="+31 6 12345678" >
           <svg
             className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16"
@@ -55,7 +56,7 @@ export default function ContactBox() {
             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
           </svg>
         </InfoBox>
-      </div> */}
+      </div>
 
     </div >
   );
