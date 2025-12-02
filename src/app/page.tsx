@@ -32,7 +32,7 @@ export default function Home() {
       <main className="mx-auto max-w-[1440px] w-full space-y-[40vh]">
 
         {/** Hero section **/}
-        <section id="home" className="pt-[37vh] pb-[10vh]">
+        <section id="home" className="pt-[37vh] pb-[10vh] md:mx-0 mx-10">
           <div className="flex flex-col items-center justify-center w-full px-4">
             <GuusNohlmans onClick={() => scrollToSection("about")} />
             <h2 className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition z-0" onClick={() => scrollToSection("projects")}>
@@ -44,7 +44,7 @@ export default function Home() {
         {/** About Me section **/}
         <section
           id="about"
-          className="overflow-hidden flex items-start pb-[10vh]"
+          className="overflow-hidden flex items-start pb-[10vh] md:mx-0 mx-10"
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
             <div className="flex flex-col flex-wrap pr-0 md:pr-10 lg:pr-20 ">
@@ -61,7 +61,7 @@ export default function Home() {
 
 
         {/** Experience section **/}
-        <section id="experience" className="pb-[10vh]">
+        <section id="experience" className="pb-[10vh] md:mx-0 mx-10">
           <div className="flex flex-col justify-center mx-auto w-full px-4">
             <h1 className="text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Experience</h1>
             <div className="flex-col md:flex-row flex justify-between w-full mt-2 space-x-1 space-y-15">
@@ -72,7 +72,7 @@ export default function Home() {
         </section>
 
         {/** Projects section **/}
-        <section id="projects" className="pb-[10vh]">
+        <section id="projects" className="pb-[10vh] md:mx-0 mx-10">
           <div className="flex flex-col justify-center mx-auto w-full px-4">
             <h1 className="text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-4">Projects</h1>
             <div className="flex flex-row w-full justify-between space-x-6">
@@ -84,7 +84,7 @@ export default function Home() {
         </section>
 
         {/** Contact section **/}
-        <section id="contact" className="pb-[17vh]">
+        <section id="contact" className="pb-[17vh] md:mx-0 mx-10">
           <div className="flex flex-col justify-center w-full mx-auto">
             <h1 className="text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Contact me</h1>
             <ContactBox />
