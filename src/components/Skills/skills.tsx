@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className="px-8 py-6 rounded-2xl min-w-[30vw] mx-[7rem] md:mx-0 md:max-w-[40vw] bg-primaryYellow shadow-[0.8rem_0.8rem_0_rgba(0,0,0,0.12)] items-start h-full text-primaryGreen">
+    <div className="px-8 py-6 rounded-2xl min-w-[30vw] md:mx-0 mx-[7rem] md:max-w-[20vw] w-auto bg-primaryYellow shadow-[0.8rem_0.8rem_0_rgba(0,0,0,0.12)] items-start h-full text-primaryGreen">
       <h1 className="text-[6.3rem] md:text-[3.15rem] [text-shadow:0.25rem_0.25rem_0rem_rgb(0_0_0_/0.18)] font-bold">Skills</h1>
       <hr className="border-2 my-1 rounded-full" />
       <div className="mt-4 flex flex-col gap-4">
