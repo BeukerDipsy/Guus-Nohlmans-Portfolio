@@ -24,7 +24,7 @@ This information is divided in sections.
 
 ---
 
-## 🛠️ Build using
+## 🛠️ Built using
 
 This portfolio is build using technlogies mentioned below.
 
@@ -33,6 +33,24 @@ This portfolio is build using technlogies mentioned below.
 * [Tailwind CSS](https://tailwindcss.com/)
 
 ---
+## ⚙️ Project setup
+
+Here is a quick guide to help you set up this project on your own device.
+
+### Install dependancies
+```
+cd [root]
+npm install
+npm install dotenv
+```
+
+### Run the project
+```
+cd [root]
+npm run dev
+```
+Open the project in your browser using [localhost](https://localhost:3000)
+
 
 ## 📬 Contact
 
