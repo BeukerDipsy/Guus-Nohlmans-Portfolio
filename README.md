@@ -1,4 +1,4 @@
-# 🌟 Portfolio – Guus nohlmans
+# 🌟 Portfolio - Guus nohlmans
 
 Welkom bij mijn portfolio!
 Dit project laat zien wat ik in mijn ICT-carriere heb geleerd samen met een paar projecten die dit aantonen. Daarbij vertel ik wie ik ben, en hoe je contact met mij kan op nemen.
@@ -14,11 +14,11 @@ Deze informatie is opgedeeld in secties
 
 **Overzicht secties**
 
-* 🏠 Home – Toont bij binnenkomst mijn naam samen met een pakkende slogan en branding.
+* 🏠 Home - Toont bij binnenkomst mijn naam samen met een pakkende slogan en branding.
 * 👤 About - Geeft een kleine samenvatting over wie ik ben en wat ik doe in het dagelijk leven.
 * 🧠 Experience - Laat mijn voortgang binnen ICT zien en toont mijn skills.
-* 💼 Projects – Een overzicht van mijn meest relevante projecten met beschrijvingen en foto's.
-* 📞 Contact – Toont contactinformatie en een gemakkelijk email from.
+* 💼 Projects - Een overzicht van mijn meest relevante projecten met beschrijvingen en foto's.
+* 📞 Contact - Toont contactinformatie en een gemakkelijk email from.
 
 ---
 
@@ -35,7 +35,7 @@ Dit portfolio is gemaakt met onderstaande webtechnologieën:
 ## 📬 Contact
 
 👤 **Guus Nohlmans**
-📧 [[contact@guusn.nl](mailto:jouw.email@example.com)]
+📧 [contact@guusn.nl](mailto:jouw.email@example.com)
 🔗 [guusn.nl](https://guusn.nl)
 💼 [LinkedIn](https://www.linkedin.com/in/guus-nohlmans-b23753297)
 
