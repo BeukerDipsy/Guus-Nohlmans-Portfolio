@@ -35,7 +35,7 @@ Dit portfolio is gemaakt met onderstaande webtechnologieën:
 ## 📬 Contact
 
 👤 **Guus Nohlmans**
-📧 [[contact@guusn.nl](mailto:jouw.email@example.com)]
+📧 [contact@guusn.nl](mailto:jouw.email@example.com)]
 🔗 [guusn.nl](https://guusn.nl)
 💼 [LinkedIn](https://www.linkedin.com/in/guus-nohlmans-b23753297)
 
