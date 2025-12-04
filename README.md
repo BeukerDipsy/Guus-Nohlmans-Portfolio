@@ -1,30 +1,32 @@
+<img width="1903" height="1079" alt="image" src="https://github.com/user-attachments/assets/b14fd00c-7d33-42d9-bd7d-bb417263e2a0" />
+
 # 🌟 Portfolio - Guus nohlmans
 
-Welkom bij mijn portfolio!
-Dit project laat zien wat ik in mijn ICT-carriere heb geleerd samen met een paar projecten die dit aantonen. Daarbij vertel ik wie ik ben, en hoe je contact met mij kan op nemen.
+Welcome to my portfolio!
+This project shows what I have learned during my ICT-career using a few of my projects. I also tell a bit about myself and how you can reach out to me.
 
 ---
 
-## 🚀 Inhoud van het project
+## 🚀 Project overview
 
-Mijn portfolio is een OnePager met als doel zo overzichtelijk mijzelf zo overzichtelijk en interactief mogelijk te introduceren.
+My portfolio is a OnePage with the purpose introducing myself as clean and interactive as possible.
 
-Het bevat informatie over wie ik ben, wat ik doe binnen ICT en welke projecten ik aan heb gewerkt.
-Deze informatie is opgedeeld in secties
+It contains information about who I am, what I do within ICT and projects I have worken on.
+This information is divided in sections.
 
-**Overzicht secties**
+**Overview sections**
 
-* 🏠 Home - Toont bij binnenkomst mijn naam samen met een pakkende slogan en branding.
-* 👤 About - Geeft een kleine samenvatting over wie ik ben en wat ik doe in het dagelijk leven.
-* 🧠 Experience - Laat mijn voortgang binnen ICT zien en toont mijn skills.
-* 💼 Projects - Een overzicht van mijn meest relevante projecten met beschrijvingen en foto's.
-* 📞 Contact - Toont contactinformatie en een gemakkelijk email from.
+* Home - Show's my name, slogan and branding on the landing section.
+* About - Gives a small summary about me and what I do in my free-time.
+* Experience - Show's my experiences and skills within ICT.
+* Projects - Gives a overview of my most recent projects with descriptions and images.
+* Contact - display's my contact-information and an easy-to-use email form.
 
 ---
 
-## 🛠️ Gebouwd met
+## 🛠️ Build using
 
-Dit portfolio is gemaakt met onderstaande webtechnologieën:
+This portfolio is build using technlogies mentioned below.
 
 * [Next.js](https://nextjs.org/)
 * [React](https://react.dev/)
@@ -41,4 +43,4 @@ Dit portfolio is gemaakt met onderstaande webtechnologieën:
 
 ---
 
-> Feedback of suggesties zijn altijd welkom.
+> Feedback or suggestions are always welcome.
