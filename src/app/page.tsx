@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      {/* <NavFooter sectionIds={sectionIds} /> */}
+      <NavFooter sectionIds={sectionIds} />
     </>
   );
 }
