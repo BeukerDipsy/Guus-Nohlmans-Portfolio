@@ -1,41 +1,60 @@
 "use client";
+import { useEffect, useRef, useState } from "react";
 import GuusNohlmans from "@/components/customName/guusNohlmans";
 import NavFooter from "@/components/navFooter";
 import DipsyFace from "@/components/dipsyFace";
 import ContactBox from "@/components/ContactBox/contactBox";
-import { useEffect, useState } from "react";
 import ProjectCard from "@/components/projectCard";
 import Education from "@/components/Skills/education";
 import Skills from "@/components/Skills/skills";
 
 export default function Home() {
-  const [sectionIds, setSectionIds] = useState<string[]>([]);
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
+  const sectionIds = ["home", "about", "skills", "projects", "contact"];
+  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
+  const [margins, setMargins] = useState<number[]>([]);
+
+  const scrollToSection = (index: number) => {
+    const section = sectionRefs.current[index];
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "center" });
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
-
-
   useEffect(() => {
-    const ids = Array.from(
-      document.getElementsByTagName("section")
-    ).map(sec => sec.id);
+    const calculateMargins = () => {
+      const newMargins = sectionRefs.current.map((sec) => {
+        if (!sec) return 0;
+        const remainingPx = window.innerHeight - sec.offsetHeight;
+        return remainingPx > 0 ? remainingPx / 2 : 0;
+      });
+      setMargins(newMargins);
+    };
 
-    setSectionIds(ids);
+    calculateMargins();
+    window.addEventListener("resize", calculateMargins);
+    return () => window.removeEventListener("resize", calculateMargins);
   }, []);
 
   return (
     <>
-      <main className="mx-auto max-w-[1440px] w-full space-y-[40vh]">
+      <main className="max-w-[1440px] mx-auto w-full">
 
         {/** Hero section **/}
-        <section id="home" className="pt-[37vh] pb-[10vh] md:mx-0 mx-10">
-          <div className="flex flex-col items-center justify-center w-full px-4">
-            <GuusNohlmans onClick={() => scrollToSection("about")} />
-            <h2 className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition z-0" onClick={() => scrollToSection("projects")}>
+        <section
+          id="home"
+          ref={(el) => { sectionRefs.current[0] = el; }}
+          style={{
+            marginTop: `${margins[0] || 0}px`,
+            marginBottom: `${margins[0] || 0}px`,
+          }}
+          className="flex flex-col items-center justify-center"
+        >
+          <div className="w-full px-4 flex flex-col items-center justify-center">
+            <GuusNohlmans onClick={() => scrollToSection(1)} />
+            <h2
+              className="text-4xl -mt-6 text-secondaryYellow text-center cursor-pointer hover:underline transition z-0"
+              onClick={() => scrollToSection(3)}
+            >
               Turning creative ideas into creative applications.
             </h2>
           </div>
@@ -44,6 +63,11 @@ export default function Home() {
         {/** About Me section **/}
         <section
           id="about"
+          ref={(el) => { sectionRefs.current[1] = el; }}
+          style={{
+            marginTop: `${margins[1] || 0}px`,
+            marginBottom: `${margins[1] || 0}px`,
+          }}
           className="overflow-hidden flex items-start pb-[10vh] md:mx-0 mx-10"
         >
           <div className="flex flex-col md:flex-row md:justify-between h-full font-bold w-full px-4">
@@ -59,9 +83,16 @@ export default function Home() {
           </div>
         </section>
 
-
-        {/** Experience section **/}
-        <section id="experience" className="pb-[10vh] md:mx-0 mx-10">
+        {/** Skills / Experience section **/}
+        <section
+          id="skills"
+          ref={(el) => { sectionRefs.current[2] = el; }}
+          style={{
+            marginTop: `${margins[2] || 0}px`,
+            marginBottom: `${margins[2] || 0}px`,
+          }}
+          className="pb-[10vh] md:mx-0 mx-10"
+        >
           <div className="flex flex-col justify-center mx-auto w-full px-4">
             <h1 className="text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Experience</h1>
             <div className="flex-col md:flex-row flex w-full mt-2 gap-10 space-y-15">
@@ -72,7 +103,15 @@ export default function Home() {
         </section>
 
         {/** Projects section **/}
-        <section id="projects" className="pb-[10vh] md:mx-0 mx-10">
+        <section
+          id="projects"
+          ref={(el) => { sectionRefs.current[3] = el; }}
+          style={{
+            marginTop: `${margins[3] || 0}px`,
+            marginBottom: `${margins[3] || 0}px`,
+          }}
+          className="pb-[10vh] md:mx-0 mx-10"
+        >
           <div className="flex flex-col justify-center mx-auto w-full px-4">
             <h1 className="text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left mb-4">Projects</h1>
             <div className="flex flex-row w-full justify-between space-x-6">
@@ -84,14 +123,25 @@ export default function Home() {
           </div>
         </section>
 
+        <br />
+
         {/** Contact section **/}
-        <section id="contact" className=" pb-[5vh] md:pb-[17vh] md:mx-0 mx-10">
+        <section
+          id="contact"
+          ref={(el) => { sectionRefs.current[4] = el; }}
+          style={{
+            marginTop: `${margins[4] || 0}px`,
+            marginBottom: `${margins[4] || 0}px`,
+          }}
+          className=" pb-[5vh] md:pb-[17vh] md:mx-0 mx-10"
+        >
           <div className="flex flex-col justify-center w-full mx-auto">
             <h1 className=" md:mb-0 mb-8 text-[10rem] md:text-[8rem] lg:text-[6rem] [text-shadow:0.67rem_0.67rem_0rem_rgb(0_0_0_/0.18)] md:[text-shadow:0.53rem_0.53rem_0rem_rgb(0_0_0_/0.18)] lg:[text-shadow:0.4rem_0.4rem_0rem_rgb(0_0_0_/0.18)] text-secondaryYellow font-bold text-left">Contact me</h1>
             <ContactBox />
           </div>
         </section>
       </main>
+
       <NavFooter sectionIds={sectionIds} />
     </>
   );
